@@ -1,3 +1,4 @@
+import pyperclip
 import random
 import array
 text_file = open("password.txt", "w+")
@@ -26,7 +27,9 @@ while (len(password) < length): #this makes the password
    for i in range(length):
       randomset = random.choice(arr)
       password = password + random.choice(randomset)
+pyperclip.copy(password)
 print(password)
+print("Your password has been copied to your clipboard!")
 print("Enjoy your password!")
 input('Press ENTER to exit')
 linelist.append(password)
