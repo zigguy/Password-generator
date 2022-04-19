@@ -13,7 +13,8 @@ password = ""
 while 1:
     lowercaseinput = input("Do you want lowercase letters in your password? (y/n): ")
     if (lowercaseinput == "y" or lowercaseinput == "n"):
-        arr.append(lowercase)
+        if (lowercaseinput == "y"):
+            arr.append(lowercase)
         break
     if (lowercaseinput != "y" or lowercaseinput != "n"):
         print("Please enter y or n.")
@@ -21,7 +22,8 @@ while 1:
 while 1:
     uppercaseinput = input("Do you want uppercase letters in your password? (y/n): ")
     if (uppercaseinput == "y" or uppercaseinput == "n"):
-        arr.append(uppercase)
+        if (uppercaseinput == "y"):
+            arr.append(uppercase)
         break
     if (uppercaseinput != "y" or uppercaseinput != "n"):
         print("Please enter y or n.")
@@ -29,7 +31,8 @@ while 1:
 while 1:
     numbersinput = input("Do you want numbers in your password? (y/n): ")
     if (numbersinput == "y" or numbersinput == "n"):
-        arr.append(numbers)
+        if (numbersinput == "y"):
+            arr.append(numbers)
         break
     if (numbersinput != "y" or numbersinput != "n"):
         print("Please enter y or n.")
@@ -37,7 +40,8 @@ while 1:
 while 1:
     specialinput = input("Do you want special characters in your password? (!@#$%^&*() (y/n): ")
     if (specialinput == "y" or specialinput == "n"):
-        arr.append(special)
+        if (specialinput == "y"):
+            arr.append(special)
         break
     if (specialinput != "y" or specialinput != "n"):
         print("Please enter y or n.")
