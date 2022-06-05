@@ -46,9 +46,14 @@ while 1:
     if (specialinput != "y" or specialinput != "n"):
         print("Please enter y or n.")
 
-    
 
-length = int(input("How long do you want your password to be? "))
+while 1:
+    try:
+        length = int(input("How long do you want your password to be? "))
+    except ValueError:
+        print("Please enter a number.")
+        continue
+    break
 while (len(password) < length): #this makes the password
    for i in range(length):
       randomset = random.choice(arr)
@@ -60,7 +65,7 @@ print("Enjoy your password!")
 input('Press ENTER to exit')
 #linelist.append(password)
 #for line in linelist:
-text_file.write(password+' ')
+text_file.write(password+"\n")
 text_file.close()
 
 #credits
