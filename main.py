@@ -1,7 +1,7 @@
 import pyperclip
 import random
 import array
-text_file = open("password.txt", "a")
+text_file = open("harbor.txt", "a")
 #linelist = text_file.readlines()
 arr = []
 lowercase = "abcdefghijklmnopqrstuvwxyz"
@@ -47,6 +47,7 @@ while 1:
         print("Please enter y or n.")
 
     
+name = input("What is the name of the website for this password?: ")
 length = int(input("How long do you want your password to be? "))
 while (len(password) < length): #this makes the password
    for i in range(length):
@@ -59,7 +60,8 @@ print("Enjoy your password!")
 input('Press ENTER to exit')
 #linelist.append(password)
 #for line in linelist:
-text_file.write(password+"\n")
+text_file.write(password+' ')
+text_file.write(name+"\n")
 text_file.close()
 
 #credits
