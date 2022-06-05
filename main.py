@@ -61,7 +61,6 @@ input('Press ENTER to exit')
 #linelist.append(password)
 #for line in linelist:
 text_file.write(password+' ')
-text_file.write(name+"\n")
 text_file.close()
 
 #credits
